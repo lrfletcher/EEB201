@@ -43,3 +43,16 @@ print(meatloaf)
 #bubbles began at value of 12, and ended at -4.
 print(bubbles)
 
+
+
+#EXERCISE 4
+###you can use the if statement with the modulus operator to conditionally perform operations
+years <- c( 2015, 2016, 2018, 2020, 2021)
+for(ii in 1:length(years)){
+  if(years[ii] %% 2 == 0|years[ii] %% 4 == 0){
+    cat(years[ii], 'Hooray, congressional elections!', sep = '\t', fill = T)
+  }
+  
+}
+#added an or statement that the message will print every 2 years (for congressional election) or every 4 years (for presidential eleciton)
+
