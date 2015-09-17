@@ -1,3 +1,5 @@
+
+#EXERCISE 1
 for(ii in 1:9){
   if (ii == 9) {
     cat("*"); }
@@ -7,5 +9,37 @@ for(ii in 1:9){
   }
 }
 
+
+#EXERCISE 2
 for(ii in 1:9){
     cat("*&"); }
+
+
+#EXERCISE 3
+dogs <- 10;
+for (i in 1:5){
+  dogs <- dogs + 1; 
+}
+###
+meatloaf <- 0; 
+for (i in 5:9){
+  meatloaf <- meatloaf - i + 1;
+  cat(meatloaf) 
+}
+###
+bubbles <- 12;
+for (i in -1:-4){
+  bubbles <- i;
+}
+
+#dogs began at 10 and ended at 15
+#ex. for dogs, 10+1=11, 11+1=12, 12+1=13, 13+1=14, 14+1=15
+print(dogs)
+
+#meatloaf began at 0 and ended at -30
+#ex. meatloaf-5+1--->0-5+1=-4. -4-6+1=-9. -9-7+1=-15. -15-8+1=-22. -22-9+1=-30
+print(meatloaf)
+
+#bubbles began at value of 12, and ended at -4.
+print(bubbles)
+
