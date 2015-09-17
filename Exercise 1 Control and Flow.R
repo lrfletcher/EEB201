@@ -56,3 +56,21 @@ for(ii in 1:length(years)){
 }
 #added an or statement that the message will print every 2 years (for congressional election) or every 4 years (for presidential eleciton)
 
+
+
+#EXERCISE 5
+bankAccounts <- c(10, 9.2, 5.6, 3.7, 8.8, 0.5);
+interestRate <- 0.0125;
+for (i in 1:length(bankAccounts)) {
+  compounded[i] <- interestRate*bankAccounts[i] + bankAccounts[i]; }
+rep(interestRate)
+#problem: "compounded" has not been initialized. Compounded needs to be defined.
+bankAccounts <- c(10, 9.2, 5.6, 3.7, 8.8, 0.5);
+compounded<-rep(bankAccounts, 1)
+interestRate <- 0.0125;
+for (i in 1:length(bankAccounts)) {
+  compounded[i] <- interestRate*bankAccounts[i] + bankAccounts[i]; }
+
+compounded
+
+
